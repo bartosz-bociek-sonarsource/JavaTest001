@@ -1,9 +1,9 @@
 pipeline {
   agent none
   stages {
-    stage('') {
+    stage('gradlew') {
       steps {
-        withSonarQubeEnv 'sonnar'
+        withGradle()
       }
     }
 
